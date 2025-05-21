@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Basics Excercise</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Jane Doe</h1>
+        <!-- Which elements could be used to link to parts of the webpage,
+      which appear below? -->
+        <nav id="nav">
+          <li>About Me</li>
+          <li>Contact</li>
+          <li>Skillset</li>
+        </nav>
+      </header>
+      <!-- Looks like the following part is the central content of our webpage. -->
+      <main>
+        <section id="about-me">
+          <h2>About me</h2>
+          <p>
+            Hi there! Welcome to my personal website. Here is gathered the most
+            important information about me. If you want to work with me or get
+            to know me, please don't hesitate to get in contact.
+          </p>
+          <!-- What element could be used to combine an image with a descriptive caption? -->
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1686406129456-ebefc756e666?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="a random picture"
+              width="300"
+            />
+            <h6>
+              A random picture, because I would like to maintain my privacy and
+              let my code speak for me, instead of images.
+            </h6>
+          </article>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <!-- When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working? -->
+          <a href="https://github.com">GitHub</a>
+          <a href="https://de.linkedin.com/">LinkedIn</a>
+          <a href="https://codesandbox.io/">CodeSandbox</a>
+        </section>
+
+        <section id="skills">
+          <h2>Skillset</h2>
+          <!-- This part could use some bulletpoint to be more structured. -->
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Painting rainbows</li>
+            <li>Party</li>
+          </ol>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
