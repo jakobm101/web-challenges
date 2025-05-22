@@ -10,17 +10,25 @@
   overflow: hidden;
   border-radius: 8px;
   background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+}
+line {
+  width: 100%;
+  border: 1px solid salmon;
+  display: flex;
+  justify-content: start;
 }
 
 .animal {
   padding: 16px;
   font-size: 32px;
 }
-.giraffe {
-  text-align: center;
+line:has(.giraffe) {
+  justify-content: center;
 }
-.dino {
-  text-align: right;
+line:has(.dino) {
+  justify-content: end;
 }
 
 .crocodile:hover {
