@@ -1,11 +1,3 @@
-/*
-  None of these styles are being applied to the HTML.
-  Can you fix that?
-
-  Once the styles are applied,
-  the park should appear as a pale yellow box with a dashed border.
-*/
-
 *,
 *::before,
 *::after {
@@ -22,12 +14,7 @@
 
 .animal {
   padding: 16px;
-
-  /*
-    The animals are very small.
-    The size of the emojis is controlled via the font size.
-    Set the font size to 32px.
-  */
+  font-size: 32px;
 }
 
 /*
