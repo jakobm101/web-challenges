@@ -1,3 +1,9 @@
+# Web Preview
+# [ link ](https://htmlpreview.github.io/?https://github.com/jakobm101/web-challenges/blob/main/0001--css/css-basics_pink-box/index.html)
+---
+---
+---
+
 # CSS Basics: Pink Box
 
 Let's get started with CSS! In this challenge, you will create a pink box.
