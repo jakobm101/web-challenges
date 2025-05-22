@@ -73,6 +73,15 @@ section:has(li) {
 
 .subtitle {
   /* Your solution */
+  border: 3px solid gold;
+ border-top: 0;
+ border-bottom: 0;
+ display: inline;
+ padding: 5px;
+}
+
+section:has(li) .subtitle{
+  border-color: orange;
 }
 
 /* ------- List ------- */
