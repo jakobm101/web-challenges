@@ -15,14 +15,17 @@
 }
 line {
   width: 100%;
-  border: 1px solid salmon;
   display: flex;
   justify-content: start;
 }
 
 .animal {
-  padding: 16px;
-  font-size: 32px;
+  padding: 30px;
+  margin: 20px;
+  font-size: 100px;
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 111px;
 }
 line:has(.giraffe) {
   justify-content: center;
