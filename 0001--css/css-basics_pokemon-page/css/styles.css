@@ -16,9 +16,16 @@
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: LemonChiffon;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
-
+main {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 /* ------- Headings Part 1 ------- */
 
 /* Task 3: Setting the line height to 1.5 is good for texts, for accessibility reasons, but it seems too much for headings. Let's change this by giving our headings a line height of 1.2. */
@@ -57,6 +64,7 @@ section {
   padding: 20px;
   margin: 10px;
   border-left: 5px solid orange;
+  width: 100%;
 }
 section:has(li) {
   border-color: gold;
@@ -89,14 +97,16 @@ section:has(li) .subtitle{
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
- {
+ ul {
   list-style: "🧡";
-  padding-left: /* Add value */ ;
+  padding-left: 1rem/* Add value */ ;
 }
 
 /* Add selector */
- {
-  padding-left: /* Add value */ ;
+ li {
+  padding-left: 1rem/* Add value */ ;
+  line-height: 1.6;
+  font-size: x-large;
 }
 
 /* ------- The End -------- */
