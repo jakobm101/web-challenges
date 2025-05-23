@@ -23,6 +23,10 @@ body {
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px 30px;
+  position: fixed;
+  left:0;
+  right:0;
+  top: 0;
 }
 
 .header__subheading {
@@ -43,6 +47,8 @@ body {
   height: 48px;
   color: #ffffff;
   background: #370182;
+  position: relative;
+  bottom: 0;
 }
 
 /**
