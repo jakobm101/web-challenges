@@ -20,6 +20,7 @@ body {
  * document is scrolled.
  */
 .header {
+  z-index: 111;
   background: #370182;
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
