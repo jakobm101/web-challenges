@@ -6,14 +6,14 @@ Utilize what you've learned about flexbox to complete the following tasks:
 
 1. **Profile Section Structure**
 
-- The profile section contains a level 2 heading, an image and an about text.
-- Center the image within this section.
+x The profile section contains a level 2 heading, an image and an about text.
+x Center the image within this section.
 
 2. **Tech Stack List Styling**
 
-- Arrange the list items horizontally instead of stacking them vertically.
-- Ensure there is a gap of at least 10px between each “Tech Stack” item.
-- Allow list items to wrap to the next line when there isn’t enough horizontal space.
+x Arrange the list items horizontally instead of stacking them vertically.
+x Ensure there is a gap of at least 10px between each “Tech Stack” item.
+x Allow list items to wrap to the next line when there isn’t enough horizontal space.
 
 ## Notes
 
