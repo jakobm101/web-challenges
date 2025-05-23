@@ -94,6 +94,10 @@ body {
  * and remains fixed in place when the document is scrolled.
  */
 .goto-top {
+  z-index: 111; 
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
   text-decoration: none;
   color: #f9f9f9;
   padding: 12px 24px;
