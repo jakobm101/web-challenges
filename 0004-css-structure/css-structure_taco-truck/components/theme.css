@@ -1,0 +1,21 @@
+
+
+:root {
+  --color-main: bisque;
+  --color-secondary: hotpink;
+  --color-highlight: honeydew;
+  --color-black: black;
+}
+:root {
+  --body-bg: #fddcd2;
+
+  --header-bg: var(--color-black);
+  --header-text: var(--color-black);
+
+  --main-bg: var(--main-bg);
+  --main-text: var(--color-black);
+  --main-title-bg: var(--color-secondary);
+
+  --card-bg: var(--color-highlight);
+  --card-text: var(--color-black);
+}
