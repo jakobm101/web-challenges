@@ -4,9 +4,11 @@ console.clear();
 const SUPER_SECRET_PASSWORD = "h4x0r1337";
 
 const receivedPassword = "password1234";
-
+if (receivedPassword === SUPER_SECRET_PASSWORD){console.log('Welcome Brunhilde1984');
+} else { console.log("Denied")}
 // Part 2: Even / Odd
 const number = 6;
+number % 2 ? console.log('even') : console.log('odd');
 
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
