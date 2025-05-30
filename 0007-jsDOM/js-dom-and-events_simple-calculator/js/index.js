@@ -19,7 +19,7 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-buttonAdd.addEventListener('mouseup', () => console.log('yo'));
+buttonAdd.addEventListener("mouseup", () => console.log(operand1 + operand2));
 
 // --^-- write your code here --^--
 
