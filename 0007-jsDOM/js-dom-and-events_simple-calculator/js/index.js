@@ -7,7 +7,11 @@ let operand2 = 4;
 
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
 const buttonAdd = document.querySelector('[data-js="add"]');
-const buttonSubstract = document.querySelector('[data-js="substract"]');
+const buttonSubtract = document.querySelector('[data-js="subtract"]');
+const buttonMultiply = document.querySelector('[data-js="multiply"]');
+const buttonDivide = document.querySelector('[data-js="divide"]');
+const buttonExponent = document.querySelector('[data-js="exponent"]');
+
 /* 
 Step 2: Add event listeners for each mathematical operation:
 
@@ -19,8 +23,11 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-buttonAdd.addEventListener("mouseup", () => 
-  console.log(operand1 + operand2));
+     buttonAdd.addEventListener("mouseup", () => console.log(operand1 + operand2));
+buttonSubtract.addEventListener("mouseup", () => console.log(operand1 - operand2));
+buttonMultiply.addEventListener("mouseup", () => console.log(operand1 * operand2));
+  buttonDivide.addEventListener('mouseup', () => console.log(operand1 / operand2));
+buttonExponent.addEventListener('mouseup', () => console.log(operand1 ** operand2));
 // ----- Update the First Operand -----
 
 /*
@@ -45,7 +52,7 @@ const buttonDivideOperand = document.querySelector('[data-js="divide-by-two"]');
 function variableChanger(amount = 1, operation = "add") {
   if (operation === "add") {
     operand1 += amount;
-  } else if (operation === "substract") {
+  } else if (operation === "subtract") {
     operand1 -= amount;
   }
   switch (operation) {
@@ -61,10 +68,10 @@ function variableChanger(amount = 1, operation = "add") {
 buttonIncrease1.addEventListener("mouseup", () => variableChanger());
 buttonIncrease5.addEventListener("mouseup", () => variableChanger(5, "add"));
 buttonDecrease1.addEventListener("mouseup", () =>
-  variableChanger(1, "substract")
+  variableChanger(1, "subtract")
 );
 buttonDecrease5.addEventListener("mouseup", () =>
-  variableChanger(5, "substract")
+  variableChanger(5, "subtract")
 );
 buttonMultiplyOperand.addEventListener("mouseup", () =>
   variableChanger(2, "multiply")
