@@ -39,8 +39,8 @@ Step 2: Add event listeners to update `operand1` based on the button clicked. Lo
 const buttonIncrease1 = document.querySelector('[data-js="increase-by-one"]');
 const buttonIncrease5 = document.querySelector('[data-js="increase-by-five"]');
 
-function variableChanger(amount = 1) {
-  operand1 += amount;
+function variableChanger(amount = 1, operation = 'add') {
+  operation = 'add' ? operand1 += amount : operand2 -= amount;
   console.log(operand1);
 }
 buttonIncrease1.addEventListener("mouseup", () => variableChanger());
