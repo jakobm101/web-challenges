@@ -1,7 +1,7 @@
 console.clear();
 
 let operand1 = 12;
-let operand2 = 4;
+let operand2 = 5;
 
 // ----- Mathematical Operations -----
 
@@ -11,6 +11,7 @@ const buttonSubtract = document.querySelector('[data-js="subtract"]');
 const buttonMultiply = document.querySelector('[data-js="multiply"]');
 const buttonDivide = document.querySelector('[data-js="divide"]');
 const buttonExponent = document.querySelector('[data-js="exponent"]');
+const buttonModulo = document.querySelector('[data-js="modulo"]');
 
 /* 
 Step 2: Add event listeners for each mathematical operation:
@@ -23,11 +24,21 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-     buttonAdd.addEventListener("mouseup", () => console.log(operand1 + operand2));
-buttonSubtract.addEventListener("mouseup", () => console.log(operand1 - operand2));
-buttonMultiply.addEventListener("mouseup", () => console.log(operand1 * operand2));
-  buttonDivide.addEventListener('mouseup', () => console.log(operand1 / operand2));
-buttonExponent.addEventListener('mouseup', () => console.log(operand1 ** operand2));
+buttonAdd.addEventListener("mouseup", () => console.log(operand1 + operand2));
+buttonSubtract.addEventListener("mouseup", () =>
+  console.log(operand1 - operand2)
+);
+buttonMultiply.addEventListener("mouseup", () =>
+  console.log(operand1 * operand2)
+);
+buttonDivide.addEventListener("mouseup", () =>
+  console.log(operand1 / operand2)
+);
+buttonExponent.addEventListener("mouseup", () =>
+  console.log(operand1 ** operand2)
+);
+buttonModulo.addEventListener("mouseup", () => console.log(operand1 % operand2));
+
 // ----- Update the First Operand -----
 
 /*
