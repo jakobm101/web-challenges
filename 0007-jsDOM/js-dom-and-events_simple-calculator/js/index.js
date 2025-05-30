@@ -40,6 +40,7 @@ const buttonIncrease5 = document.querySelector('[data-js="increase-by-five"]');
 const buttonDecrease1 = document.querySelector('[data-js="decrease-by-one"]');
 const buttonDecrease5 = document.querySelector('[data-js="decrease-by-five"]');
 const buttonMultiplyOperand = document.querySelector('[data-js="multiply-by-two"]');
+const buttonDivideOperand = document.querySelector('[data-js="divide-by-two"]');
 
 function variableChanger(amount = 1, operation = "add") {
   if(operation === 'add'){
@@ -61,3 +62,4 @@ buttonIncrease5.addEventListener("mouseup", () =>
 buttonDecrease1.addEventListener("mouseup", () => variableChanger(1, "substract"));
 buttonDecrease5.addEventListener('mouseup', () => variableChanger(5,'substract'));
 buttonMultiplyOperand.addEventListener('mouseup', () => variableChanger(2,'multiply'));
+buttonDivideOperand.addEventListener('mouseup', () => variableChanger(2, 'divide'))
