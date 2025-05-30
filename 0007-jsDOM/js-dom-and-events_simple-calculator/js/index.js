@@ -6,10 +6,7 @@ const operand2 = 4;
 // ----- Mathematical Operations -----
 
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
-
-// --v-- write your code here --v--
-
-// --^-- write your code here --^--
+const buttonAdd = document.querySelector('[data-js="add"]');
 
 /* 
 Step 2: Add event listeners for each mathematical operation:
@@ -22,6 +19,7 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
+buttonAdd.addEventListener('mouseup', () => console.log('yo'));
 
 // --^-- write your code here --^--
 
