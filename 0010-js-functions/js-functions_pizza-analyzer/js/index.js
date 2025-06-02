@@ -10,11 +10,16 @@ const output = document.querySelector('[data-js="output"]');
 
 pizzaInput1.addEventListener("input", () => {
   calculatePizzaGain(pizzaInput1.value, pizzaInput2.value);
+  updatePizzaDisplay(pizza1, pizzaInput1.value);
+  updateOutputColor(pizzaInput1.value, pizzaInput2.value);
   // Write your code here
 });
 
 pizzaInput2.addEventListener("input", () => {
   calculatePizzaGain(pizzaInput1.value, pizzaInput2.value);
+  updatePizzaDisplay(pizza2, pizzaInput2.value);
+
+  updateOutputColor(pizzaInput1.value, pizzaInput2.value);
   // Write your code here
 });
 
@@ -33,8 +38,13 @@ function calculatePizzaGain(diameter1, diameter2) {
   pizzaSize2 = pizzaInput2.value;
 }
 
-//console.log(4**2);
-
 // Task 2: Define the function `updatePizzaDisplay` here
-
+function updatePizzaDisplay(pizzaElement, newSize) {
+  pizzaElement.style.width = `${(newSize / 24) * 100}px`;
+}
 // Task 3: Define the function `updateOutputColor` here
+function updateOutputColor(size1, size2) {
+  outputSection.style.backgroundColor =
+    size1 > size2 ? "var(--red)" : "var(--green)";
+}
+// setting pizza to 8 and 55 causes bug
