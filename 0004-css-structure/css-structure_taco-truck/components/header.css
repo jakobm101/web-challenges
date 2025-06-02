@@ -1,0 +1,15 @@
+@import "./styles.css";
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-black);
+  padding: 20px;
+
+}
+
+.header__title {
+  color: var(--color-secondary);
+  margin: 0;
+}
+
