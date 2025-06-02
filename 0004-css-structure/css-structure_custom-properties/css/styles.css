@@ -1,8 +1,12 @@
+
 :root {
   --color-granite: darkgray;
   --color-nemo: orange;
   --color-foam: beige;
 }
+
+
+
 *,
 *::before,
 *::after {
@@ -21,7 +25,11 @@ header {
 
 h1 {
   text-align: center;
+
   color: var(--color-foam);
+
+
+
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -34,7 +42,11 @@ h2 {
 }
 
 strong {
+
   color: var(--color-nemo);
+
+
+
 }
 
 section {
@@ -62,6 +74,7 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
+
   background-color: var(--color-nemo);
   border-radius: 4px;
 }
@@ -92,13 +105,23 @@ a:focus-visible {
 }
 
 mark {
+
   background-color: var(--color-nemo);
   color: var(--color-foam);
+
+
+
+
   border-radius: 4px;
   letter-spacing: 0.025em;
 }
 
 ::selection {
+
   background-color: var(--color-granite);
   color: var(--color-nemo);
+
+
+
+
 }
