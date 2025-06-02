@@ -3,11 +3,11 @@ console.clear();
 console.log("-------------");
 console.log("Exercise 1:");
 /*
-1: The function below is not executed. Can you figure out why? Find the bug and fix it.
+1: The function below is not executed. Can you figure ut why? Find the bug and fix it.
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+logText();
 
 function logText() {
   console.log("This text does not appear. Why?");
@@ -32,13 +32,18 @@ function greetMary() {
   console.log("Welcome Mary, good to see you again!");
 }
 
-greetAlice();
-greetBob();
-greetMary();
+// greetAlice();
+// greetBob();
+// greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greet(firstName = "Alice") {
+  console.log(`Welcome ${firstName}, good to see u bro 👊😎`);
+}
+greet()
+greet('Bob')
+greet('Mary')
 
 // --^-- write your code here --^--
 
