@@ -57,5 +57,11 @@ Note: Separation text refers to the text that is logged in the console before ea
 */
 
 // --v-- write your code here --v--
-
+function logSeparator(exercise = 0){
+  let line = '-';
+  let lines = line + line + line + line + line + line + line + line + line + line + line;
+  console.log(lines,`\nExercise: ${exercise}`);
+  
+}
+logSeparator()
 // --^-- write your code here --^--
