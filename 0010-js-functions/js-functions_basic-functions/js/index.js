@@ -1,4 +1,10 @@
 console.clear();
+const logBookData = (newRating = rating) => {
+  rating = newRating;
+  copiesSold++;
+  console.log({ title }, { author }, { rating }, { copiesSold });
+};
+
 
 /*
 1: Create the data for a book in an online store. Define variables for the following details:
@@ -9,7 +15,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+let title = "50 shades of arrays";
+let author = "Princess Donut";
+let rating = 4.5;
+let copiesSold = 123497810276;
 // --^-- write your code here --^--
 
 /*
@@ -25,7 +34,10 @@ Then:
 - Update the book's rating.
 - Log all variables to the console again after making these updates.
 */
-
+logBookData();
+copiesSold++;
+rating++;
+logBookData();
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
@@ -38,7 +50,7 @@ Then:
  - Replace the existing `console.log` statements with calls to this function.
  - Then, increase the number of sales two more times and log the updated details after each increase.
 */
-
 // --v-- write your code here --v--
-
+logBookData();
+logBookData();
 // --^-- write your code here --^--
