@@ -43,5 +43,11 @@ const switchValueButton = document.querySelector(
 );
 
 // --v-- Write your code here --v--
-
+switchValueButton.addEventListener('click', () => {
+  const zwischenAblage = firstSwitchValueInput.value;
+  firstSwitchValueInput.value = secondSwitchValueInput.value;
+  secondSwitchValueInput.value = zwischenAblage;
+  console.log('yo');
+  
+})
 // --^-- End of Task 3 --^--
