@@ -11,14 +11,24 @@ function hideTosError() {
 function showTosError() {
   tosError.removeAttribute("hidden");
 }
+hideTosError();
+tosCheckbox.addEventListener(
+  "input",
+  // (tosCheckbox.checked ? hideTosError() : showTosError())
+  () => {
+    tosCheckbox.checked ? hideTosError() : showTosError();
+  }
+);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  // --v-- write your code here --v--
-
-  // --^-- write your code here --^--
-
+  const data = Object.fromEntries(new FormData(event.target));
+  console.log(data);
+  if (!data.tos) {
+    showTosError();
+    return;
+  }
   // eslint-disable-next-line no-alert
   alert("Form submitted");
 });
