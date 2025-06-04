@@ -9,5 +9,10 @@
   },
   "nf": {
     "template": "html-css-js-static"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0"
   }
 }
