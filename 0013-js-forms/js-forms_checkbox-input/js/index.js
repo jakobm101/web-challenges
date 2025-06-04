@@ -3,8 +3,8 @@ console.clear();
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
-const test = 1;
-function testing (){}
+const success = document.querySelector('[data-js="success"]');
+function testingLinter() {}
 
 function hideTosError() {
   tosError.setAttribute("hidden", "");
@@ -32,5 +32,6 @@ form.addEventListener("submit", (event) => {
     return;
   }
   // eslint-disable-next-line no-alert
-  alert("Form submitted");
+  // alert("Form submitted");
+  success.removeAttribute("hidden");
 });
