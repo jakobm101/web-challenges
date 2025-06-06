@@ -43,10 +43,13 @@ navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
 for (const key in nav) {
-  const li = document.createElement("li");
-  li.textContent = nav[key]["text"];
-  li.setAttribute("href", nav[key]["href"]);
+
+  const li = document.createElement('li')
+  const anchor = document.createElement("a");
+  li.append(anchor)
+  anchor.textContent = nav[key].text;
+  anchor.setAttribute("href", nav[key].href);
   
-  ul.append(li);
+  ul.append(anchor);
 }
 // --^-- write or modify code above this line --^--
