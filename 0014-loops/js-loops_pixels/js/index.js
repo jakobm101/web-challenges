@@ -123,3 +123,7 @@ const pixelValues = [
 ];
 
 const canvas = document.querySelector('[data-js="canvas"]');
+const tester = document.createElement('div')
+tester.style.backgroundColor = 'lime'
+tester.classList.add('pixel')
+canvas.append(tester)
