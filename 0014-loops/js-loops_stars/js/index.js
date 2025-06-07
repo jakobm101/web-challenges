@@ -7,8 +7,10 @@ function renderStars(filledStars = 3) {
   starContainer.innerHTML = "";
   for (let i = 0; i < 5; i++) {
     const star = document.createElement("img");
+    star. addEventListener('click', () => {
+      starContainer.innerHTML = ""
+      renderStars(i + 1)})
     filledStars <= i ? star.setAttribute("src", "assets/star-empty.svg") : star.setAttribute('src', 'assets/star-filled.svg')
-    console.log(star);
 
     starContainer.append(star);
   }
