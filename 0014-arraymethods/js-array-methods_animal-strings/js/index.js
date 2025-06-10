@@ -19,19 +19,23 @@ const animalStrings = [
   "sloth",
   "hippo",
   "rhino",
-  'cat'
+  "cat",
 ];
 
-const hippoExists = animalStrings.includes('hippo')
+const hippoExists = animalStrings.includes("hippo");
 console.log(hippoExists);
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = animalStrings.findIndex(((ani, index) => ani==='cat' && index >= 5));
+const catStartingFromIndexFiveExists = animalStrings.findIndex(
+  (ani, index) => ani === "cat" && index >= 5
+);
 console.log(catStartingFromIndexFiveExists);
 
-
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterP = null;
+const firstAnimalStartingWithLetterP = animalStrings.find((ani) =>
+  ani.startsWith("p")
+);
+console.log(firstAnimalStartingWithLetterP);
 
 const indexOfGiraffe = null;
 
