@@ -144,6 +144,9 @@ const averageWeightOfAllAnimalsInAfrica = weightOfAllAnimalsInAfrica/(animals.fi
 console.log(averageWeightOfAllAnimalsInAfrica);
 
 
+const aniSort = animals.map(ani => ani.name).toSorted()
+console.table(aniSort)
+
 export {
   firstAnimalStartingWithLetterG,
   indexOfAnimalWithNameLongerFive,
