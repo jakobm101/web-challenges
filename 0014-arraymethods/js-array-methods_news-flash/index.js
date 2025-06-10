@@ -10,7 +10,7 @@ const filteredNews = news.filter((card) => {
 });
 
 // Part 2 - start here
-const sortedNews = filteredNews;
+const sortedNews = filteredNews.toSorted((a,b) => a.body.length - b.body.length)
 
 sortedNews.forEach((news) => {
   const cardElement = Card(news);
