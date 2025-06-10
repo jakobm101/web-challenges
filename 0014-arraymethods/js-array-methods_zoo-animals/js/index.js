@@ -5,9 +5,8 @@ import { zooAnimals } from "../utils/db.js";
 // The function should return 'true' if the animal name is included in the array or 'false' if not.
 
 function hasAnimal(animals, animalName) {
-
-  return animals.includes(animalName)
-
+  const animalsLower = animals.map((animal) => animal.toLowerCase());
+  return animalsLower.includes(animalName.toLowerCase());
 }
 
 // Bonus:
