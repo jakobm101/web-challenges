@@ -32,7 +32,10 @@ const allCardsWith3Tags = cards.filter(card => card.tags.length===3)
 const allCardsThatAreNotBookmarked = cards.filter(card => !card.isBookmarked)
 
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter(card => card.tags.includes('html') || card.isBookmarked)
+console.log(allCardsWithTagsHTMLOrJSThatAreBookmarked)
+// console.log(cards[0].tags.filter(tag => tag === 'html'));
+
 
 export {
   onlyCardWithIdTwo,
