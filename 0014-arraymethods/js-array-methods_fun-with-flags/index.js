@@ -10,8 +10,8 @@ queryInput.addEventListener("input", (event) => {
   const searchString = event.target.value.toLowerCase();
 
   // const foundCountry = countries.find( cou => cou.name.startsWith(searchString))
-  const foundCountries = countries.filter((cou) =>
-    cou.name.toLowerCase().startsWith(searchString)
+  const foundCountries = countries.filter((country) =>
+    country.name.toLowerCase().startsWith(searchString)
   );
 
   if (foundCountries) {
