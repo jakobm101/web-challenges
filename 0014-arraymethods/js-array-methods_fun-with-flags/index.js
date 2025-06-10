@@ -9,7 +9,7 @@ queryInput.addEventListener("input", (event) => {
 
   const searchString = event.target.value;
 
-  const foundCountry = null;
+  const foundCountry = countries.find( cou => cou.name.startsWith(searchString))
 
   if (foundCountry) {
     const countryElement = Country(foundCountry);
