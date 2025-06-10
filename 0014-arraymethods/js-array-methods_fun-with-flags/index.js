@@ -7,10 +7,10 @@ const queryInput = document.querySelector('[data-js="query-input"]');
 queryInput.addEventListener("input", (event) => {
   container.innerHTML = "";
 
-  const searchString = event.target.value;
+  const searchString = event.target.value.toLowerCase();
 
   // const foundCountry = countries.find( cou => cou.name.startsWith(searchString))
-  const foundCountries = countries.filter( cou => cou.name.startsWith(searchString))
+  const foundCountries = countries.filter( cou => cou.name.toLowerCase().startsWith(searchString))
 
   if (foundCountries) {
     for(const country of foundCountries){
