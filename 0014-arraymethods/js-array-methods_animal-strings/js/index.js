@@ -37,7 +37,9 @@ const firstAnimalStartingWithLetterP = animalStrings.find((ani) =>
 );
 console.log(firstAnimalStartingWithLetterP);
 
-const indexOfGiraffe = null;
+const indexOfGiraffe = animalStrings.findIndex(ani => ani==='giraffe')
+console.log(indexOfGiraffe);
+
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
