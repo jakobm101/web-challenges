@@ -10,12 +10,11 @@ queryInput.addEventListener("input", (event) => {
   const searchString = event.target.value.toLowerCase();
 
   // const foundCountry = countries.find( cou => cou.name.startsWith(searchString))
-  const foundCountries = countries.filter( cou => cou.name.toLowerCase().startsWith(searchString))
+  const foundCountries = countries.filter((cou) =>
+    cou.name.toLowerCase().startsWith(searchString)
+  );
 
   if (foundCountries) {
-    for(const country of foundCountries){
-    const countryElement = Country(country);
-    container.append(countryElement);
-    }
+    foundCountries.forEach((country) => container.append(Country(country)))
   }
 });
