@@ -36,7 +36,6 @@ const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter(
     (card.tags.includes("html") && card.isBookmarked)
 );
 console.log(allCardsWithTagsHTMLOrJSThatAreBookmarked);
-// console.log(cards[0].tags.filter(tag => tag === 'html'));
 
 export {
   onlyCardWithIdTwo,
