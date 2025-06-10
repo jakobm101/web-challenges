@@ -20,6 +20,7 @@ const animalStrings = [
   "hippo",
   "rhino",
   "cat",
+  'flabbergaz'
 ];
 
 const hippoExists = animalStrings.includes("hippo");
@@ -49,12 +50,18 @@ console.log(indexOfGiraffe);
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
 // That's why we use toSorted()
-const animalsSortedAlphabetically = null;
+const animalsSortedAlphabetically = animalStrings.toSorted()
+console.log(animalsSortedAlphabetically);
+
 
 // Hint: Guess what? There is a string method called `endsWith()`.
-const anyAnimalEndsWithLetterZ = null;
+const anyAnimalEndsWithLetterZ = animalStrings.find(ani => ani.endsWith('z'))
+console.log(anyAnimalEndsWithLetterZ);
 
-const everyAnimalHasMoreThanTwoLetters = null;
+
+const everyAnimalHasMoreThanTwoLetters = animalStrings.filter(ani => ani.length>2)
+console.log(everyAnimalHasMoreThanTwoLetters);
+
 
 // Hint: There are several ways to go here. Let's focus on two options:
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
