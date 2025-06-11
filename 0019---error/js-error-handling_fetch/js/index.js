@@ -5,12 +5,24 @@ const userElement = document.querySelector("[data-js='user']");
 const errorElement = document.querySelector("[data-js='error']");
 
 async function fetchUserData(url) {
+  let contentType = "";
+  let status;
   try {
     const response = await fetch(url);
-
-    return await response.json();
+    contentType = response.headers.get("content-type");
+    status = response.status;
+    const data = await response.json()
+    userElement.textContent = 'Yo'
+    return data
   } catch (error) {
-    return { error: error.message };
+    return {
+      error:
+        error.message +
+        " ⭐️ content type: " +
+        contentType +
+        "  Status:" +
+        status,
+    };
   }
 }
 
