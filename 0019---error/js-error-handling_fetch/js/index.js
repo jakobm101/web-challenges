@@ -4,29 +4,6 @@ const actionsElement = document.querySelector("[data-js='actions']");
 const userElement = document.querySelector("[data-js='user']");
 const errorElement = document.querySelector("[data-js='error']");
 
-async function fetchUserData(url) {
-  let contentType = "🍰";
-  try {
-    const response = await fetch(url, {
-      headers: { "x-api-key": "reqres-free-v1" },
-    });
-    contentType = response.headers.get("content-type");
-    const status = response.status;
-    if (!response.ok)
-      throw new Error("Oh no 🙀 Response is not ok! Status is " + status);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    return {
-      error:
-        error.message +
-        "  🙀  " +
-        url +
-        "  🤯 I wanna have JSON and I got " +
-        contentType,
-    };
-  }
-}
 
 const endpoints = [
   { name: "User 1", url: "https://reqres.in/api/users/12" },
