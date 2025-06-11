@@ -36,12 +36,13 @@ const recipes = [
 */
 
 const onlyTitles = recipes.map(recipe => recipe.title)
-
 // ['Crepes', ...]
 
-const titlesWithDuration = null; // ['Crepes (60min)', ...]
+const titlesWithDuration = recipes.map(recipe => `${recipe.title} (${recipe.duration}min)`)
+// ['Crepes (60min)', ...]
 
-const timePerServing = null; // [20, 10, 432, 12]
+const timePerServing = recipes.map(recipe => recipe.duration/recipe.servings)
+// [20, 10, 432, 12]
 
 // EXTRA:
 
