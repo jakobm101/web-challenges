@@ -4,6 +4,30 @@ const actionsElement = document.querySelector("[data-js='actions']");
 const userElement = document.querySelector("[data-js='user']");
 const errorElement = document.querySelector("[data-js='error']");
 
+async function fetchUserData(url) {
+  try {
+    const header = { "x-api-key": "reqres-free-v1" };
+
+    const response = await fetch(url, {
+      headers: header,
+    });
+    const contentType = response.headers.get("content-type");
+    if (!contentType.includes("application/json")) {
+      throw new Error(`I only work with Jason but I got ${contentType}`);
+    }
+    if (!response.ok) {
+      throw new Error(
+        `Oh no 🙀 Response is not ok! 
+        Status is ${response.status}`
+      );
+    }
+    return await response.json();
+  } catch (error) {
+    return {
+      error: `Oh damn! 😿 ${error.message}`,
+    };
+  }
+}
 
 const endpoints = [
   { name: "User 1", url: "https://reqres.in/api/users/12" },
