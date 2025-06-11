@@ -41,6 +41,12 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  const url = "https://swapi.py4e.com/api/people";
+  const data = await fetch(url);
+  const json = await data.json();
+  
+  const results = await json.results;
+  const luke = results[0]
+  console.table(luke)
 }
