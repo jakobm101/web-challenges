@@ -11,7 +11,7 @@ const company = {
   course: "Web Development",
   location: "Hamburg",
 };
-
+export const { name } = company;
 // Example: export const { value1 } = myObject;
 
 /*
@@ -25,6 +25,8 @@ Use destructuring to extract the following:
 */
 
 const user = { name: "John", years: 30 };
+export const { name: name1, years: age, isAdmin } = user;
+console.log({ isAdmin });
 
 /*
 EXERCISE 3
