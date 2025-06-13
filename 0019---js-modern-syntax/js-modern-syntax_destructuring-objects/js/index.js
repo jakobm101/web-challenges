@@ -39,6 +39,7 @@ const dog = {
   breed: "husky",
   age: 5,
 };
+export const { name: dogName, breed:dogBreed, age:dogAge } = dog
 
 /*
 EXERCISE 4
@@ -51,6 +52,8 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+export const { lastName: personLastName, ...moreInformation} = person
+// console.log({moreInformation, personLastName});
 
 /*
 EXERCISE 5
@@ -59,11 +62,7 @@ three variables `name`, `country` and `numPeople`.
 Hint: You may need to rename one property during destructuring.
 */
 
-export function logInfo(city) {
-  const name = city.name;
-  const country = city.country;
-  const numPeople = city.population;
-
+export function logInfo({name, country, population:numPeople}) {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
