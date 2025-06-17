@@ -1,4 +1,8 @@
 import Button from "./components/Button/Button";
 export default function App() {
-  return <Button color={"red"} >Yooo</Button>
+  const handleClick = () => {
+    console.log("my choice");
+  };
+
+  return <Button color={"red"} onClickProp={handleClick}>Yooo</Button>;
 }
