@@ -1,3 +1,4 @@
+import Button from "./components/Button/Button";
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Button disabled color={"red"} >Yooo</Button>
 }
