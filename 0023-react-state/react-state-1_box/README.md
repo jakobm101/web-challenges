@@ -30,7 +30,7 @@ Check the console and pay close attention to the logged value of `isActive`. You
 This is not a bug - it is the expected behavior due to how React’s state works fundamentally.
 
 Can you explain why this happens?
-
+Yes
 ## Notes
 
 - You do not need to make changes to the return statement of the `App` component (except for the bonus task).
