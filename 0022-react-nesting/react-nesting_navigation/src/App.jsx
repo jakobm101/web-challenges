@@ -1,4 +1,5 @@
 import "./styles.css";
+import Link from "./components/Link";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header/Header";
 
@@ -9,19 +10,19 @@ export default function App() {
   return (
     <>
       <Header>
-        <a href="#">
+        <Link href="#">
           <img className="round-image" src={logo} alt="logo" />
-        </a>
+        </Link>
         <Navigation>
-          <a className="navigation__link" href="#home">
+          <Link className="navigation__link" href="#home">
             Home
-          </a>
-          <a className="navigation__link" href="#about">
+          </Link>
+          <Link className="navigation__link" href="#about">
             About
-          </a>
-          <a className="navigation__link" href="#impressum">
+          </Link>
+          <Link className="navigation__link" href="#impressum">
             Impressum
-          </a>
+          </Link>
         </Navigation>
         <button
           type="button"
