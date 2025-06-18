@@ -1,5 +1,5 @@
 export default function Link({children, href, }) {
     return (
-        <a href={href}>{children}</a>
+        <a className='navigation__link' href={href}>{children}</a>
     )
 }
