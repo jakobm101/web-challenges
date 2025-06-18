@@ -1,11 +1,10 @@
 import "./styles.css";
 import Logo from "./components/Logo";
-import Image from "./components/Image";
+import Avatar from "./components/Avatar";
 import Link from "./components/Link";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header/Header";
 
-import avatar from "./img/avatar.jpg";
 
 export default function App() {
   return (
@@ -23,14 +22,8 @@ export default function App() {
             Impressum
           </Link>
         </Navigation>
-        <button
-          type="button"
-          onClick={() => console.log("I could toggle a profile!")}
-          aria-label="toggle profile"
-        >
-          <Image className="round-image" src={avatar} alt="avatar" />
-        </button>
       </Header>
+      <Avatar></Avatar>
       <main>content goes here…</main>
     </>
   );
