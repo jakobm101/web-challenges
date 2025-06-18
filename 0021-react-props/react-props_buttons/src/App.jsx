@@ -1,3 +1,8 @@
+import Button from "./components/Button/Button";
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  const handleClick = () => {
+    console.log("my choice");
+  };
+
+  return <Button color={"red"} onClickProp={handleClick}>Yooo</Button>;
 }
