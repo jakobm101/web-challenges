@@ -1,19 +1,17 @@
 import "./styles.css";
+import Logo from "./components/Logo";
 import Image from "./components/Image";
 import Link from "./components/Link";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header/Header";
 
 import avatar from "./img/avatar.jpg";
-import logo from "./img/logo.jpg";
 
 export default function App() {
   return (
     <>
       <Header>
-        <Link href="#">
-          <Image className="round-image" src={logo} alt="logo" />
-        </Link>
+        <Logo></Logo>
         <Navigation>
           <Link className="navigation__link" href="#home">
             Home
