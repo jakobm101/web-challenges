@@ -1,21 +1,17 @@
-import React from "react";
-import "./styles.css";
-
-export default function App() {
-  return (
+import React from "react"; import "./styles.css"; export default function App() { return (
     <main>
-      <Button />
-      <Button />
-      <Button />
-      <Button />
+  <Button>1</Button>
+  <Button>2</Button>
+  <Button>3</Button>
+  <Button>4</Button>
     </main>
   );
 }
 
-function Button() {
+function Button({children}) {
   return (
     <button className="button" type="button">
-      Click me!
+    {children}
     </button>
   );
 }
